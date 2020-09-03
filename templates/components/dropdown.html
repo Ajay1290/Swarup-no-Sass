@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+    <title>Swarup Experiments</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='dist/dev/CSS/vendor/swarup.min.css') }}">
+    <style>
+        :root{
+            --theme-primary: #1d1b1b !important;
+        }
+    </style>
+</head>
+
+<body style="margin: 0px;padding:0px">
+    
+    <div class="m-5 " style="width: 300px;">
+        <div class="sw-dropdown sw-dropsearch">
+            <button type="button" class="sw-btn sw-droplabel" >Search DROP BUTTON</button>
+            <div class="sw-dropmenu">
+                <a href="https://www.google.com" class="sw-item">Apple</a>
+                <div class="sw-item">Grapes</div>
+                <div class="sw-item">Watermelon</div>
+                <div class="sw-item">Watermelon</div>
+                <div class="sw-item">Grapes</div>
+                <div class="sw-item">Watermelon</div>
+                <div class="sw-item">Watermelon</div>
+                <div class="sw-item">Grapes</div>
+                <div class="sw-item">Watermelon</div>
+                <div class="sw-item">Watermelon</div>
+                <div class="sw-item">Grapes</div>
+                <div class="sw-item">Watermelon</div>
+                <div class="sw-item">Watermelon</div>
+                <div class="sw-item">Grapes</div>
+                <div class="sw-item">Watermelon</div>
+                <div class="sw-item">Watermelon</div>
+                <div class="sw-item">Grapes</div>
+                <div class="sw-item">Watermelon</div>
+                <div class="sw-item">Watermelon</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="m-5 " style="width: 300px;">
+        <div class="sw-dropdown">
+            <button type="button" class="sw-btn sw-droplabel" >BUTTON</button>
+            <div class="sw-dropmenu">
+                <a href="https://www.google.com" class="sw-item">Apple</a>
+                <div class="sw-item">Grapes</div>
+                <div class="sw-item">Watermelon</div>
+                <div class="sw-item">Watermelon</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='dist/dev/JS/vendor/swarup.js') }}"></script>
+    <script src="{{ url_for('static', filename='src/power.js') }}"></script>
+</body>
+</html>

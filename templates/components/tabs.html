@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+    <title>Swarup Experiments</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='dist/dev/CSS/vendor/swarup.min.css') }}">
+    <style>
+        :root{
+            --theme-primary: #1d1b1b !important;
+        }
+    </style>
+</head>
+
+<body style="margin: 0px;padding:0px">
+    <div class="m-5">
+        <div class="sw-tabs-area">
+            
+            <div class="sw-tabs">
+                <a class="sw-tab active" tab-target="#home" >Home</a>
+                <a class="sw-tab" tab-target="#group" >Group</a>
+                <a class="sw-tab">Shine</a>
+                <a class="sw-tab">More</a>
+            </div>
+
+            <div id="home" class="sw-tab-content">
+                <h2>Home</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium molestias repellat cupiditate culpa, a iusto earum, voluptatum, blanditiis delectus sunt commodi quia repudiandae optio voluptatibus repellendus tempora! Modi, nemo quas.</p>
+            </div>
+
+            <div id="group" class="sw-tab-content">
+                <h2>Group</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus error eos unde nihil provident totam quisquam accusamus consequuntur dolores dignissimos ducimus sint laudantium voluptate voluptatum, nobis aspernatur necessitatibus eum quibusdam.</p>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="{{ url_for('static', filename='dist/dev/JS/vendor/swarup.js') }}"></script>
+    <script src="{{ url_for('static', filename='src/power.js') }}"></script>
+</body>
+</html>

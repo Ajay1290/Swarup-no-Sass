@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+    <title>Swarup Experiments</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='dist/dev/CSS/vendor/swarup.min.css') }}">
+    <style>
+        :root{
+            --theme-primary: #1d1b1b !important;
+        }
+    </style>
+</head>
+
+<body style="margin: 0px;padding:0px">
+    
+    <div class="m-5">         
+        <div class="sw-panel w-50">
+            <div class="sw-wing show" id="firstWing">
+                <h1 class="f-22">First Heading</h1>
+                <p class="f-14">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur excepturi aliquid aliquam. At incidunt dicta, dignissimos eius quas non nam necessitatibus error odit. Quos, quibusdam cupiditate? Veritatis, aut? Culpa, voluptatum?</p>
+                <button type="button" class="sw-btn wing-btn  " wing-target="#secondWing" >NEXT PANNEL</button>
+            </div>
+            
+            <div class="sw-wing" id="secondWing">
+                <h1 class="f-22">Second Heading</h1>
+                <p class="f-14">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur excepturi aliquid aliquam. At incidunt dicta, dignissimos eius quas non nam necessitatibus error odit. Quos, quibusdam cupiditate? Veritatis, aut? Culpa, voluptatum?</p>
+                <p class="f-14">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur excepturi aliquid aliquam. At incidunt dicta, dignissimos eius quas non nam necessitatibus error odit. Quos, quibusdam cupiditate? Veritatis, aut? Culpa, voluptatum?</p>
+
+                <button class="sw-btn wing-btn" wing-target="#firstWing" >back</button>
+                <button class="sw-btn wing-btn" wing-target="#thirdWing" >Next</button>
+            </div>
+
+            <div class="sw-wing" id="thirdWing">
+                <h1 class="f-22">Third Heading</h1>
+                <p class="f-14">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur excepturi aliquid aliquam. At incidunt dicta, dignissimos eius quas non nam necessitatibus error odit. Quos, quibusdam cupiditate? Veritatis, aut? Culpa, voluptatum?</p>
+                <p class="f-14">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur excepturi aliquid aliquam. At incidunt dicta, dignissimos eius quas non nam necessitatibus error odit. Quos, quibusdam cupiditate? Veritatis, aut? Culpa, voluptatum?</p>
+                <p class="f-14">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur excepturi aliquid aliquam. At incidunt dicta, dignissimos eius quas non nam necessitatibus error odit. Quos, quibusdam cupiditate? Veritatis, aut? Culpa, voluptatum?</p>
+                <button class="sw-btn wing-btn" wing-target="#secondWing" >back</button>
+            </div>
+
+        </div>
+        
+    </div>
+
+    <script src="{{ url_for('static', filename='dist/dev/JS/vendor/swarup.js') }}"></script>
+    <script src="{{ url_for('static', filename='src/power.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+    <title>Swarup Experiments</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='dist/dev/CSS/vendor/swarup.min.css') }}">
+    <style>
+        :root{
+            --theme-primary: #1d1b1b !important;
+        }
+    </style>
+</head>
+
+<body style="margin: 0px;padding:0px">
+    <div class="m-5">
+        <div class="sw-card" style="width: 340px;">
+            <div class="sw-card-heading">
+                Dashboard
+            </div>
+            <p class="f-12">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, reprehenderit. Asperiores deserunt ullam commodi sed maxime. Omnis alias delectus veritatis officia! Magnam iste aut a nemo autem beatae tempora architecto!
+            </p>
+            <div class="sw-card-bottom float-right">
+                <button class="sw-btn">Accept</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='dist/dev/JS/vendor/swarup.js') }}"></script>
+    <script src="{{ url_for('static', filename='src/power.js') }}"></script>
+</body>
+</html>
