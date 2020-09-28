@@ -9,7 +9,7 @@ module.exports = merge(common ,{
     mode: "production",
     output: {
         filename: "[name].min.js",
-        path: path.resolve(__dirname, './static/dist/prod/JS/')
+        path: path.resolve(__dirname, './static/dist/JS/')
     },
     optimization:{
         minimizer: [
@@ -23,7 +23,7 @@ module.exports = merge(common ,{
     },
     plugins: [
         new MiniCssExtractPlugin({
-          filename: '../../prod/CSS/[name].min.css',
+          filename: '../../dist/CSS/[name].min.css',
         }),
     ],
     module: {
@@ -31,18 +31,6 @@ module.exports = merge(common ,{
           {
             test: /\.css$/,
             use: [MiniCssExtractPlugin.loader, 'css-loader'],
-          },
-          {
-            test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
-            use: [
-              {
-                loader: 'file-loader',
-                options: {
-                  name: '[name].[ext]',
-                  outputPath: '../../prod/FONTS'
-                }
-              }
-            ]
           }
         ],
     },

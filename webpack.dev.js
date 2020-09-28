@@ -9,7 +9,7 @@ module.exports = merge(common ,{
     mode: "development",
     output: {
         filename: "[name].js",
-        path: path.resolve(__dirname, './static/dist/dev/JS/')
+        path: path.resolve(__dirname, './static/dist/JS/')
     },
     watch: true,
     optimization:{
@@ -24,7 +24,7 @@ module.exports = merge(common ,{
     },
     plugins: [
         new MiniCssExtractPlugin({
-          filename: '../../dev/CSS/[name].min.css',
+          filename: '../../CSS/[name].min.css',
         }),
     ],
     module: {
@@ -32,18 +32,6 @@ module.exports = merge(common ,{
           {
             test: /\.css$/,
             use: [MiniCssExtractPlugin.loader, 'css-loader'],
-          },
-          {
-            test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
-            use: [
-              {
-                loader: 'file-loader',
-                options: {
-                  name: '[name].[ext]',
-                  outputPath: '../../dev/FONTS'
-                }
-              }
-            ]
           }
         ],
     },
