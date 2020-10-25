@@ -7,27 +7,119 @@
     <meta http-equiv="X-UA-Compatible" content="IE=7">
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 
-    <title>Swarup Experiments</title>
+    <title>Swarup Experiments - Swarup v1.0</title>    
     <link rel="stylesheet" href="../../static/dist/CSS/swarup.min.css">
     <style>
         :root{
-            --theme-primary: #1d1b1b !important;
-        }
+            --theme-primary: #431 !important;
+            --theme-secondary: #fff !important;
+            --theme-surface: #eee !important;
+        }       
     </style>
 </head>
 
-<body style="margin: 0px;padding:0px">
-    <div class="m-5">
-        <button class="sw-btn"> Button </button>
+<body>
+    <h1 class="m-2">Types of Buttons</h1>
+    <div class="m-4">
+        <button class="sw-btn">Button</button>
+        <button class="sw-btn sw-btn-outline">Button</button>
+        <button class="sw-btn sw-btn-text">Button</button>
+        <button class="sw-btn sw-btn-secondary ">Button</button>
+        <button class="sw-btn sw-btn-invert ">Button</button>
     </div>
-    <div class="m-5">
-        <button class="sw-btn sw-btn-outline"> Button </button>
+
+    <div class="m-4">
+        <button class="sw-btn no-shadow">Button</button>
+        <button class="sw-btn no-shadow sw-btn-outline">Button</button>
+        <button class="sw-btn no-shadow sw-btn-text">Button</button>
+        <button class="sw-btn no-shadow sw-btn-secondary sw-border">Button</button>
+        <button class="sw-btn no-shadow sw-btn-invert sw-border">Button</button>
     </div>
-    <div class="m-5">
-        <button class="sw-btn sw-btn-text"> Button </button>
+
+    <h1 class="m-2">Button Sizes</h1>
+    <div class="m-4">
+        <button class="sw-btn sw-btn-sm">Button</button>
+        <button class="sw-btn sw-btn-md">Button</button>
+        <button class="sw-btn sw-btn-lg">Button</button>
     </div>
-    <div class="m-5">
-        <button class="sw-btn sw-btn-invert"> Button </button>
+    <div class="m-4">
+        <button class="sw-btn sw-btn-sm no-shadow">Button</button>
+        <button class="sw-btn sw-btn-md no-shadow">Button</button>
+        <button class="sw-btn sw-btn-lg no-shadow">Button</button>
+    </div>
+
+    <h1 class="m-2">Button Dropdown</h1>
+    <div class="m-4">
+        <div class="sw-btn-group">
+            <button class="sw-btn">Button</button>
+            <div tabindex="2" class="sw-dropdown">
+                <button class="sw-btn sw-droplabel sw-btn-dropdown " ></button>
+                <div class="sw-dropmenu ">
+                    <a href="https://www.google.com" class="sw-item">Apple</a>
+                    <div class="sw-item">Grapes</div>
+                    <div class="sw-item">Watermelon</div>
+                    <div class="sw-item">Watermelon</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sw-btn-group">
+            <div tabindex="2" class="sw-dropdown">
+                <button class="sw-btn sw-droplabel sw-btn-dropdown " ></button>
+                <div class="sw-dropmenu ">
+                    <a href="https://www.google.com" class="sw-item">Apple</a>
+                    <div class="sw-item">Grapes</div>
+                    <div class="sw-item">Watermelon</div>
+                    <div class="sw-item">Watermelon</div>
+                </div>
+            </div>
+            <button class="sw-btn">Button</button>
+        </div>
+
+        <div class="sw-btn-group">
+            <div tabindex="2" class="sw-dropdown">
+                <button class="sw-btn sw-droplabel sw-btn-dropdown " ></button>
+                <div class="sw-dropmenu ">
+                    <a href="https://www.google.com" class="sw-item">Apple</a>
+                    <div class="sw-item">Grapes</div>
+                    <div class="sw-item">Watermelon</div>
+                    <div class="sw-item">Watermelon</div>
+                </div>
+            </div>
+            <button class="sw-btn">Button</button>
+            <div tabindex="2" class="sw-dropdown">
+                <button class="sw-btn sw-droplabel sw-btn-dropdown " ></button>
+                <div class="sw-dropmenu ">
+                    <a href="https://www.google.com" class="sw-item">Apple</a>
+                    <div class="sw-item">Grapes</div>
+                    <div class="sw-item">Watermelon</div>
+                    <div class="sw-item">Watermelon</div>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <h1 class="m-2">Button Groups</h1>
+    <div class="m-4">
+        <div class="sw-btn-group">
+            <button class="sw-btn">Hello</button>
+            <button class="sw-btn">Hello</button>
+            <button class="sw-btn">Hello</button>
+        </div>
+
+        <div class="sw-btn-group">
+            <button class="sw-btn">Hello</button>
+            <button class="sw-btn sw-btn-secondary">Hello</button>
+            <button class="sw-btn">Hello</button>
+        </div>
+
+        <div class="sw-btn-group">
+            <button class="sw-btn sw-btn-secondary">Hello</button>
+            <button class="sw-btn">Hello</button>
+            <button class="sw-btn sw-btn-secondary">Hello</button>
+        </div>
     </div>
 
     <script src="../../static/dist/JS/swarup.min.js"></script>
